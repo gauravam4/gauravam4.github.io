@@ -1,0 +1,7 @@
+# Static portfolio. No build step; Render serves the repository root.
+services:
+  - type: web
+    name: gaurav-mohan
+    runtime: static
+    buildCommand: echo "Static site"
+    staticPublishPath: .
