@@ -68,6 +68,25 @@
     );
   }
 
+  /* ---------- Certificate dialogs ---------- */
+  document.querySelectorAll("[data-certs]").forEach((section) => {
+    const dialog = document.getElementById(section.dataset.certs);
+    if (!dialog || typeof dialog.showModal !== "function") return;
+    const open = () => { if (!dialog.open) dialog.showModal(); };
+    const close = () => { if (dialog.open) dialog.close(); };
+    section.addEventListener("click", open);
+    const closeBtn = dialog.querySelector(".award-dialog__close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        close();
+      });
+    }
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) close();
+    });
+  });
+
   /* ---------- Copy email ---------- */
   const copyBtn = document.getElementById("copyEmail");
   if (copyBtn) {

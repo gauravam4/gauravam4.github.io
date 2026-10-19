@@ -52,6 +52,18 @@
             <span class="status__dot" aria-hidden="true"></span>
             <span class="mono" id="heroGreeting">Lead Product Manager · Victoria's Secret · Bengaluru</span>
           </p>
+          <ul class="hero__badges" data-reveal>
+            <li>
+              <a href="#certified-product-owner">
+                <img src="assets/badges/pspo-ii.png" alt="Professional Scrum Product Owner II badge, Scrum.org" />
+              </a>
+            </li>
+            <li>
+              <a href="#certified-product-owner">
+                <img src="assets/badges/ai-for-product-owners.png" alt="AI for Product Owners microcredential, Scrum Alliance" />
+              </a>
+            </li>
+          </ul>
           <h1 class="hero__title" data-splitheading>
             I turn shopping behavior into <span class="accent">AI products</span> that move <span class="accent">revenue</span>.
           </h1>
@@ -73,7 +85,7 @@
         <aside class="hero__right" data-reveal>
           <figure class="portrait">
             <div class="portrait__frame">
-              <img id="headshot" src="assets/headshot.png" alt="Portrait of Gaurav Mohan" loading="eager"
+              <img id="headshot" src="assets/headshot.jpg" alt="Portrait of Gaurav Mohan" loading="eager"
                    onerror="this.classList.add('is-missing')" />
               <div class="portrait__mono" aria-hidden="true">GM</div>
             </div>
@@ -288,21 +300,21 @@
         <div class="tl__item" data-reveal>
           <span class="tl__marker" aria-hidden="true"></span>
           <div class="tl__meta mono"><span class="tl__now">Now</span> · Lead Product Manager · Oct 2025 – Present</div>
-          <h3 class="tl__role co"><span class="co__badge">VS</span>Victoria's Secret</h3>
+          <h3 class="tl__role co"><img class="co__logo" src="assets/logos/victorias-secret.svg" alt="" />Victoria's Secret</h3>
           <p class="tl__desc">Lingerie and fashion retail eCommerce, Bengaluru. Senior Product Manager from Jun 2023,
              then Lead. AI personalization, experimentation, and launches across web, iOS, and Android.</p>
         </div>
         <div class="tl__item" data-reveal>
           <span class="tl__marker" aria-hidden="true"></span>
           <div class="tl__meta mono">Feb 2018 – May 2023 · Product Manager &amp; Presales Consultant</div>
-          <h3 class="tl__role co"><span class="co__badge">IM</span>Impelsys</h3>
+          <h3 class="tl__role co"><img class="co__logo" src="assets/logos/impelsys.svg" alt="" />Impelsys</h3>
           <p class="tl__desc">Techno-commercial proposals, customer discovery, and the bridge between customers,
              sales, and delivery — turning capability gaps into scoped solution and product requirements.</p>
         </div>
         <div class="tl__item" data-reveal>
           <span class="tl__marker" aria-hidden="true"></span>
           <div class="tl__meta mono">Jun 2014 – Feb 2018 · Presales Executive</div>
-          <h3 class="tl__role co"><span class="co__badge">WP</span>Wipro</h3>
+          <h3 class="tl__role co"><img class="co__logo" src="assets/logos/wipro.svg" alt="" />Wipro</h3>
           <p class="tl__desc">Solution responses covering scope, timeline, and cost. Single point of contact
              on large bids worth more than $100Mn.</p>
         </div>
@@ -326,12 +338,16 @@
       </div>
 
       <div class="creds__grid">
-        <article class="cred" data-reveal>
-          <span class="cred__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 6.7 21.5 12 18.7l5.3 2.8-1.8-7"/><path d="m9.4 9 1.9 1.9L15 7.2"/></svg>
-          </span>
-          <h3 class="cred__title">Certified Product Owner</h3>
-          <p class="cred__desc"><strong>Professional Scrum Product Owner II</strong> (Scrum.org, Apr 2025) and <strong>AI for Product Owners</strong> (Scrum Alliance, May 2025).</p>
+        <article class="cred cred--awards" id="certified-product-owner" data-certs="ownerDialog" data-reveal>
+          <div class="cred--awards__top">
+            <h3 class="cred__title">Certified Product Owner</h3>
+            <button type="button" class="cred__more">View More <span aria-hidden="true">&rarr;</span></button>
+          </div>
+          <ul class="award-list">
+            <li><span>AI for Product Owners</span><span class="mono">Scrum Alliance · May 2025</span></li>
+            <li><span>Professional Scrum Product Owner II</span><span class="mono">Scrum.org · Apr 2025</span></li>
+            <li><span>Professional Scrum Product Owner I</span><span class="mono">Scrum.org · Dec 2024</span></li>
+          </ul>
         </article>
 
         <article class="cred" data-reveal>
@@ -342,23 +358,76 @@
           <p class="cred__desc">Post Graduate Program in <strong>Business and AI at Scaler</strong>, in progress. Hands-on with classifier models, LLM-based classification, RAG, and prompt engineering.</p>
         </article>
 
-        <article class="cred" data-reveal>
-          <span class="cred__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 4h12v8a6 6 0 0 1-12 0V4z"/><path d="M6 6H4a4 4 0 0 0 4 4M18 6h2a4 4 0 0 1-4 4"/></svg>
-          </span>
-          <h3 class="cred__title">Impact Awards</h3>
-          <p class="cred__desc"><strong>Better Together</strong> (May 2025) and <strong>Passion with Purpose</strong> (Apr 2024), both at Victoria's Secret.</p>
-        </article>
-
-        <article class="cred" data-reveal>
-          <span class="cred__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v6c0 5 3.4 7.6 8 9 4.6-1.4 8-4 8-9V7l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
-          </span>
+      <article class="cred cred--awards" id="earlier-recognition" data-certs="awardDialog" data-reveal>
+        <div class="cred--awards__top">
           <h3 class="cred__title">Earlier Recognition</h3>
-          <p class="cred__desc">Impelsys <strong>Excellence Award</strong> (2022 and 2021) and <strong>First Responder</strong> (2019). Wipro <strong>Titan — Best Presales Individual</strong> (2017).</p>
-        </article>
+          <button type="button" class="cred__more" id="viewAwards">View More <span aria-hidden="true">&rarr;</span></button>
+        </div>
+        <ul class="award-list">
+          <li><span>Better Together</span><span class="mono">Victoria's Secret · May 2025</span></li>
+          <li><span>Passion with Purpose</span><span class="mono">Victoria's Secret · July 2024</span></li>
+          <li><span>Excellence — Overall Performance</span><span class="mono">Impelsys · Jan 2022</span></li>
+          <li><span>Excellence — Individual</span><span class="mono">Impelsys · Jan 2021</span></li>
+          <li><span>First Responder</span><span class="mono">Impelsys · Jan 2019</span></li>
+          <li><span>Titan — Best Presales Individual</span><span class="mono">Wipro · 2018</span></li>
+        </ul>
+      </article>
       </div>
     </section>
+
+    <dialog class="award-dialog" id="ownerDialog" aria-labelledby="ownerDialogTitle">
+      <div class="award-dialog__bar">
+        <h3 id="ownerDialogTitle">Certified Product Owner</h3>
+        <button type="button" class="award-dialog__close">Close</button>
+      </div>
+      <div class="awards__grid">
+        <figure class="award">
+          <img src="assets/certs/ai-for-product-owners.jpg" alt="Scrum Alliance certificate for Gaurav Alapha Mohan, AI for Product Owners, May 28, 2025" />
+          <figcaption><span>AI for Product Owners</span><span class="mono">Scrum Alliance · May 2025</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/certs/pspo-ii.jpg" alt="Scrum.org Professional Scrum Product Owner II certificate for Gaurav Alapha Mohan, April 3, 2025" />
+          <figcaption><span>Professional Scrum Product Owner II</span><span class="mono">Scrum.org · Apr 2025</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/certs/pspo-i.jpg" alt="Scrum.org Professional Scrum Product Owner I certificate for Gaurav Alapha Mohan, December 23, 2024" />
+          <figcaption><span>Professional Scrum Product Owner I</span><span class="mono">Scrum.org · Dec 2024</span></figcaption>
+        </figure>
+      </div>
+    </dialog>
+
+    <dialog class="award-dialog" id="awardDialog" aria-labelledby="awardDialogTitle">
+      <div class="award-dialog__bar">
+        <h3 id="awardDialogTitle">Earlier Recognition</h3>
+        <button type="button" class="award-dialog__close">Close</button>
+      </div>
+      <div class="awards__grid">
+        <figure class="award">
+          <img src="assets/awards/better-together-2025.jpg" alt="Victoria's Secret certificate awarded to Gaurav Alapha Mohan for Better Together, May 2025" />
+          <figcaption><span>Better Together</span><span class="mono">Victoria's Secret · May 2025</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/awards/passion-with-purpose-2024.jpg" alt="Victoria's Secret certificate awarded to Gaurav Alapha Mohan for Passion with Purpose, July 2024" />
+          <figcaption><span>Passion with Purpose</span><span class="mono">Victoria's Secret · July 2024</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/awards/excellence-overall-2022.jpg" alt="Impelsys Excellence Award for Overall Performance, presented to Gaurav Alapha Mohan on 21 January 2022" />
+          <figcaption><span>Excellence — Overall Performance</span><span class="mono">Impelsys · Jan 2022</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/awards/excellence-individual-2021.jpg" alt="Impelsys Excellence Award, Individual, presented to Gaurav Alapha Mohan on 22 January 2021" />
+          <figcaption><span>Excellence — Individual</span><span class="mono">Impelsys · Jan 2021</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/awards/first-responder-2019.jpg" alt="Impelsys First Responder Award presented to Gaurav A Mohan on 11 January 2019" />
+          <figcaption><span>First Responder</span><span class="mono">Impelsys · Jan 2019</span></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/awards/best-presales-2018.jpg" alt="Wipro Award of Excellence presented to Gaurav AM for Titan - Best Presales Individual" />
+          <figcaption><span>Titan — Best Presales Individual</span><span class="mono">Wipro · 2018</span></figcaption>
+        </figure>
+      </div>
+    </dialog>
 
     <!-- ============ ABOUT + STACK ============ -->
     <section class="section about" id="about">
