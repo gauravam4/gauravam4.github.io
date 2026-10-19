@@ -122,7 +122,7 @@ button { font: inherit; cursor: pointer; }
   display: grid; grid-template-columns: 1.35fr 0.85fr; gap: clamp(2rem, 6vw, 5rem);
   align-items: center;
 }
-.status { display: flex; justify-content: center; align-items: center; gap: 0.6rem; color: var(--text-dim); font-size: 0.82rem; margin-bottom: 1rem; text-align: center; }
+.status { display: flex; justify-content: center; align-items: center; gap: 0.6rem; color: var(--text-dim); font-size: 0.98rem; margin-bottom: 1rem; text-align: center; }
 .hero__badges {
   display: flex; justify-content: center; align-items: flex-end; gap: 1.4rem;
   margin: 0 0 1.8rem; padding: 0; list-style: none;
@@ -179,7 +179,7 @@ button { font: inherit; cursor: pointer; }
   letter-spacing: -0.04em;
 }
 .portrait__frame img:not(.is-missing) + .portrait__mono { display: none; }
-.portrait figcaption { display: flex; justify-content: center; align-items: baseline; gap: 0.85rem; font-size: 0.78rem; color: var(--text-dim); text-align: center; }
+.portrait figcaption { display: flex; justify-content: center; align-items: baseline; gap: 0.85rem; font-size: 0.95rem; color: var(--text-dim); text-align: center; }
 .portrait figcaption span:first-child { white-space: nowrap; }
 .portrait__role { color: var(--muted); }
 
@@ -299,9 +299,14 @@ button { font: inherit; cursor: pointer; }
 .tl__now { color: var(--accent); }
 .tl__role { font-family: var(--font-display); font-weight: 500; font-size: 1.35rem; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
 .tl__desc { color: var(--text-dim); font-size: 0.95rem; }
-.tl__edu { display: flex; flex-direction: column; gap: 0.7rem; }
-.tl__edu p { color: var(--text-dim); font-size: 0.95rem; line-height: 1.45; }
+.tl__edu { display: flex; flex-direction: column; gap: 0.85rem; }
+.tl__edu p { display: flex; align-items: center; gap: 0.7rem; color: var(--text-dim); font-size: 0.95rem; line-height: 1.45; }
 .tl__edu strong { color: var(--text); font-weight: 500; font-family: var(--font-display); letter-spacing: -0.01em; }
+.tl__edu .co__logo {
+  height: 32px; width: auto; max-width: 148px; object-fit: contain; object-position: center;
+  background: #f6f1ea; border-radius: 7px; padding: 4px 7px; box-sizing: content-box; flex-shrink: 0;
+}
+.tl__edu .co__logo--seal { width: 46px; height: 46px; padding: 3px; }
 
 /* ============================================================
    About + Stack
