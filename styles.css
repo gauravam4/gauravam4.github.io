@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ============================================================
-   Suraaj Hasija - Portfolio
+   Gaurav Mohan - Portfolio
    Editorial warm-dark system · terracotta accent
    ============================================================ */
 
@@ -174,7 +174,8 @@ button { font: inherit; cursor: pointer; }
   letter-spacing: -0.04em;
 }
 .portrait__frame img:not(.is-missing) + .portrait__mono { display: none; }
-.portrait figcaption { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-dim); }
+.portrait figcaption { display: flex; justify-content: space-between; gap: 0.75rem; font-size: 0.78rem; color: var(--text-dim); }
+.portrait figcaption span:first-child { white-space: nowrap; }
 .portrait__role { color: var(--muted); }
 
 /* Marquee */

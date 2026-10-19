@@ -1,5 +1,5 @@
 /* ============================================================
-   Suraaj Hasija - Portfolio interactions
+   Gaurav Mohan - Portfolio interactions
    - GSAP scroll reveals (free plugins only) + graceful fallback
    - Nav scroll state, mobile menu, copy-email, headline word split
    ============================================================ */
@@ -63,6 +63,7 @@
       a.addEventListener("click", () => {
         nav.classList.remove("is-open");
         navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open menu");
       })
     );
   }
